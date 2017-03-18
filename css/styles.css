@@ -137,91 +137,39 @@ body {
   font-size: 60px;
 }
 
-
-
-/* The Modal (background) */
-#userSignUpModal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+.contactFormDiv {
+  background-color: #005fb2;
+}
+.contactForm {
+  margin-top: 10px;
+}
+.contactH2 {
+  color: #fff;
+  text-align: center;
+}
+.message, .email {
+  border-radius: 20px;
+  width: 100%;
+  text-align: center;
+}
+.contactButton {
+  border: 1px solid #fff;
+  background-color: #fff;
+  border-radius: 30px;
+  width: 100%;
+  height: 50px;
+  font-size: 25px;
+  font-weight: 300;
+  color: #000;
 }
 
-/* Modal Content */
-.signUpModalContent {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    border-radius: 10px;
-    width: 80%;
-    text-align: center;
+.contactButton:hover {
+  background-color: #32CD32;
+  border: none;
+  color: #fff;
+  transition: background-color .25s linear;
 }
 
-
-/* The Close Button */
-#userClose {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-#userClose:hover,
-#userClose:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-/*gym modal sign up*/
-#gymSignUpModal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.signUpModalContent {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    border-radius: 10px;
-    width: 80%;
-    text-align: center;
-}
-
-
-/* The Close Button */
-#gymClose {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-#gymClose:hover,
-#gymClose:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-}
 
 
 @media only screen and (max-width: 660px) {
