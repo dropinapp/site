@@ -78,6 +78,25 @@ body {
   background-color: #fff;
 }
 
+.middle1Content {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+
+.pictures {
+  width: 80%;
+  height: 90%;
+}
+
+.middle1Content1, .middle1Content2 {
+  padding-top: 70px;
+}
+
+.middle1Content3 {
+  padding-right: 21px;
+}
+
 .section2tag {
   text-align: center;
 }
