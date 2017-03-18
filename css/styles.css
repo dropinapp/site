@@ -106,17 +106,23 @@ body {
   height: 100%;
 }
 
-.middle2content {
+.middle2Content {
   text-align: center;
 }
-.middle2content > h4 {
+.middle2Content > h4 {
   color: #fff;
   font-weight: 300;
   font-size: 80px;
-  margin-top: 15%;
-  margin-bottom: 15%;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
-
+#map {
+  height: 400px;
+  width: 60%;
+  margin-bottom: 5%;
+  margin-left: auto;
+  margin-right: auto;
+}
 .spacerBottom {
   top: 0;
   margin-top: 0;
@@ -171,7 +177,48 @@ body {
   transition: background-color .25s linear;
 }
 
+/* The Modal (background) */
 
+ #userSignUpModal {
+ display: none; /* Hidden by default */
+ position: fixed; /* Stay in place */
+ z-index: 1; /* Sit on top */
+ padding-top: 100px; /* Location of the box */
+ left: 0;
+ top: 0;
+ width: 100%; /* Full width */
+ height: 100%; /* Full height */
+ overflow: auto; /* Enable scroll if needed */
+ background-color: rgb(0,0,0); /* Fallback color */
+ background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+ }
+
+ /* Modal Content */
+ .signUpModalContent {
+   background-color: #fefefe;
+   margin: auto;
+   padding: 20px;
+   border: 1px solid #888;
+   border-radius: 10px;
+   width: 80%;
+   text-align: center;
+ }
+
+
+ /* The Close Button */
+ #userClose {
+   color: #aaaaaa;
+   float: right;
+   font-size: 28px;
+   font-weight: bold;
+ }
+
+ #userClose:hover,
+ #userClose:focus {
+   color: #000;
+   text-decoration: none;
+   cursor: pointer;
+ }
 
 @media only screen and (max-width: 660px) {
     .spacerTopDisplay {
