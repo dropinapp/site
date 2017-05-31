@@ -333,3 +333,7 @@ body {
   min-height: 0;
   padding-right: 0;
   padding-left: 0; }
+
+* {
+  overflow: visible;
+}
