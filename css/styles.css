@@ -1,7 +1,9 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Lato', sans-serif; }
+  font-family: 'Lato', sans-serif; 
+  overflow-y:visible;
+}
 
 /*--------------------------------------LANDING PAGE CSS---------------------------------*/
 .top {
@@ -13,7 +15,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: -1000;
+  z-index: -100;
   width: 100%; }
 
 #video-bg-elem {
