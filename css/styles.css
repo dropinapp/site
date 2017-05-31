@@ -3,6 +3,7 @@ body {
   padding: 0;
   font-family: 'Lato', sans-serif; 
   overflow:visible;
+  overflow-x:hidden;
 }
 
 /*--------------------------------------LANDING PAGE CSS---------------------------------*/
