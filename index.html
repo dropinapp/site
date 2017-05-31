@@ -5,132 +5,273 @@
     <title>DropIn</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/favicon.ico">
     <link rel="stylesheet" href="css/styles.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+    <title>Dropin</title>
   </head>
+
   <body>
-    <div class="container-fluid">
-      <div class="top">
-      <div class="videowrap">
-        <video id="video-bg-elem" preload="auto" autoplay="true" loop="loop" muted="muted">
-          <source src="video/landing.mp4" type="video/mp4">
-            video not supported
-        </video>
-      </div>
-        <div class="row">
-          <div class="col-lg-2 col-lg-offset-9">
-            <img src="img/logo.png" class="logo" alt="">
+    <div class="main-panel">
+      <div class="content" align="center">
+        <div class="container-fluid">
+          <div class="videowrap">
+            <%= video_tag "http://www.teamengine.org/landing.mp4",
+            :autoplay => true, :loop => true, :muted => true, :preload => true, :id=> "video-bg-elem"
+            %>
           </div>
-        </div>
-        <div class="row">
+          <div class="row top">
+            <div class="col-lg-2 col-lg-offset-9">
+              <img src="logo.png" class="logo" alt="">
+            </div>
+          </div>
+          <div class="row top">
             <h1 class="tag col-lg-12">GYM WHEN &#38; WHERE YOU WANT IT.</h1>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 col-lg-offset-4 buttonPosition">
-            <button type="button" name="button" class="signUpButton" id="userSignUpButton">Sign up</button>
           </div>
-        </div>
-        <div class="row spacerTopDisplay">
-          <div class="col-lg-12">
-            <img src="img/spacer.png" class="spacerTop" alt="">
+          <div class="row top">
+            <button type="button" name="button" class="signUpButton col-lg-offset-2 col-lg-2">Sign up now</button>
           </div>
-        </div>
-      </div>
-      <div class="middle1">
-        <div class="row">
-          <div class="col-lg-12">
-            <h1 class="section2tag">The Only mobile platform which gives you the Freedom to Gym when and where you want to.</h1>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 middle1Content middle1Content1">
-            <img src="img/icons/map.png" class="pictures" alt="">
-            <h3>Drop In to any Major City</h3>
-            <p>Based on your location, Drop In to the nearest gym tailored to your interests</p>
-          </div>
-          <div class="col-lg-4 middle1Content middle1Content2">
-            <img src="img/icons/money.png" class="pictures" alt="">
-            <h3>Pay as You Go</h3>
-            <p>Pay as you attend classes or sessions.</p>
-          </div>
-          <div class="col-lg-4 middle1Content middle1Content3">
-            <div class="row">
-              <div class="col-md-6">
-                <img src="img/icons/boxing.png" class="pictures" alt="">
-              </div>
-              <div class="col-md-6">
-                <img src="img/icons/climb.png" class="pictures" alt="">
-              </div>
+          <div class="row spacerTopDisplay top">
+            <div class="col-lg-12">
+              <img src="img/spacer.png" alt="">
             </div>
-            <div class="row">
-              <div class="col-md-6">
-                <img src="img/icons/cycle.png" class="pictures" alt="">
-              </div>
-              <div class="col-md-6">
-                <img src="img/icons/karate.png" class="pictures" alt="">
-              </div>
+          </div>
+          <div class="row middle1">
+            <div class="col-lg-12">
+              <h1 class="section2tag">The Only mobile platform which gives you the Freedom to Gym when and where you want to.</h1>
             </div>
-            <div class="row">
-              <div class="col-md-6">
-                <img src="img/icons/kettle.png" class="pictures" alt="">
-              </div>
-              <div class="col-md-6">
-                <img src="img/icons/rings.png" class="pictures" alt="">
-              </div>
+          </div>
+          <div class="row middle1">
+            <div class="col-lg-4">
+              <img src="location.png" class="middle1Content1" alt="">
+              <h3>Drop In to any Major City</h3>
+              <p>Based on your location, Drop In to the nearest gym tailored to your interests</p>
             </div>
-            <h3>Access to Multiple Activities</h3>
-            <p>Access to multiple activities such as Kickboxing, Yoga, CrossFit, Rock Climbing, &#38; more</p>
+            <div class="col-lg-4">
+              <img src="money.png" class="middle1Content2" alt="">
+              <h3>Pay as You Go</h3>
+              <p>Pay as you attend classes or sessions.</p>
+            </div>
+            <div class="col-lg-4">
+              <img src="search.png" class="middle1Content3" alt="">
+              <h3>Access to Multiple Activities</h3>
+              <p>Access to multiple activities such as Kickboxing, Yoga, CrossFit, Rock Climbing, &#38; more</p>
+            </div>
+          </div>
+          <div class="row middle2">
+            <div class="col-lg-12 spacerBottomDisplay">
+              <img src="spacer2.png" alt="">
+            </div>
+          </div>
+          <div class="row middle2">
+            <div class="col-lg-12 middle2Content">
+              <h4 class="middle2Tag">Map of our locations and activites</h4>
+              <div id="map-canvas"></div>
+            </div>
+          </div>
+          <div class="row footer">
+            <div class="col-lg-12">
+              <h5 class="footer-tag">Drop In Partners</h5>
+              <img src="mblogo.png" class="partner-logo-1" alt="">
+            </div>
+          </div>
+          <div class="row footer">
+            <div class="col-lg-4 col-lg-offset-4 contactForm">
+              <button type="button" class="signUpButton col-lg-13" name="button"></button>
+            </div>
+          </div>
           </div>
         </div>
       </div>
-      <div class="middle2">
-        <div class="row">
-          <div class="col-lg-12">
-            <img src="img/spacer2.png" class="spacerBottom" alt="">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12 middle2Content">
-            <h4>Map of our locations and activites</h4>
-            <div id="map"></div>
-          </div>
-        </div>
-      <div class="footer">
-        <div class="row">
-          <div class="col-lg-12">
-            <h5>Drop In Partners</h5>
-            <img src="img/mblogo.png" alt="">
-          </div>
-        </div>
-      </div>
-      <div class="contactFormDiv container-fluid">
-        <div class="row">
-          <div class="col-lg-4 col-lg-offset-4">
-            <h2 class="contactH2">Questions?</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 col-lg-offset-4 contactForm">
-            <form action="https://formspree.io/jacksongrahamricketts@gmail.com" class=""method="POST">
-              <input type="email" name="email" class="email" placeholder="Your email">
-              <br><br>
-              <textarea name="message" class="message" placeholder="Your message"></textarea>
-              <br><br><br>
-              <input type="submit" class="contactButton" value="Send">
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="" id="userSignUpModal">
-     <div class="signUpModalContent">
-       <h4>User SIGN UP FORM</h4>
-       <a name="form828840985" id="formAnchor828840985"></a>
-       <!-- <button type="button" name="button" id="userClose" class="close">[x]</button> -->
-     </div>
-    </div>
-    <script type="text/javascript" src="https://fs28.formsite.com/include/form/embedManager.js?828840985"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANnQ43Q-XOiIKao6rWJRP7tbqF7kCBBdE&callback=initMap"></script>
-    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANnQ43Q-XOiIKao6rWJRP7tbqF7kCBBdE"></script> -->
-    <script src="js/javascript.js"></script>
+
+      <script>
+       var ready = function () {
+         // necessary variables
+          var map;
+          var infoWindow;
+
+          // markersData variable stores the information necessary to each marker
+          var markersData = [
+             {
+                lat: 37.72611948029149,
+                lng: -122.4309642197085
+             },
+             {
+                lat: 37.7445308,
+                lng: -122.4209292
+             },
+             {
+                lat: 37.6971405,
+                lng: -122.4844743
+             }
+          ];
+
+
+          function initialize() {
+             var mapOptions = {
+                center: new google.maps.LatLng(37.7779296,-122.4194155),
+                zoom: 5,
+                mapTypeId: 'roadmap',
+                styles: [
+                      {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
+                      {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
+                      {elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
+                      {
+                        featureType: 'administrative.locality',
+                        elementType: 'labels.text.fill',
+                        stylers: [{color: '#d59563'}]
+                      },
+                      {
+                        featureType: 'poi',
+                        elementType: 'labels.text.fill',
+                        stylers: [{color: '#d59563'}]
+                      },
+                      {
+                        featureType: 'poi.park',
+                        elementType: 'geometry',
+                        stylers: [{color: '#263c3f'}]
+                      },
+                      {
+                        featureType: 'poi.park',
+                        elementType: 'labels.text.fill',
+                        stylers: [{color: '#6b9a76'}]
+                      },
+                      {
+                        featureType: 'road',
+                        elementType: 'geometry',
+                        stylers: [{color: '#38414e'}]
+                      },
+                      {
+                        featureType: 'road',
+                        elementType: 'geometry.stroke',
+                        stylers: [{color: '#212a37'}]
+                      },
+                      {
+                        featureType: 'road',
+                        elementType: 'labels.text.fill',
+                        stylers: [{color: '#9ca5b3'}]
+                      },
+                      {
+                        featureType: 'road.highway',
+                        elementType: 'geometry',
+                        stylers: [{color: '#746855'}]
+                      },
+                      {
+                        featureType: 'road.highway',
+                        elementType: 'geometry.stroke',
+                        stylers: [{color: '#1f2835'}]
+                      },
+                      {
+                        featureType: 'road.highway',
+                        elementType: 'labels.text.fill',
+                        stylers: [{color: '#f3d19c'}]
+                      },
+                      {
+                        featureType: 'transit',
+                        elementType: 'geometry',
+                        stylers: [{color: '#2f3948'}]
+                      },
+                      {
+                        featureType: 'transit.station',
+                        elementType: 'labels.text.fill',
+                        stylers: [{color: '#d59563'}]
+                      },
+                      {
+                        featureType: 'water',
+                        elementType: 'geometry',
+                        stylers: [{color: '#17263c'}]
+                      },
+                      {
+                        featureType: 'water',
+                        elementType: 'labels.text.fill',
+                        stylers: [{color: '#515c6d'}]
+                      },
+                      {
+                        featureType: 'water',
+                        elementType: 'labels.text.stroke',
+                        stylers: [{color: '#17263c'}]
+                      }
+                    ]
+             };
+
+             map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+             // a new Info Window is created
+             infoWindow = new google.maps.InfoWindow();
+
+             // Event that closes the Info Window with a click on the map
+             google.maps.event.addListener(map, 'click', function() {
+                infoWindow.close();
+             });
+
+             // Finally displayMarkers() function is called to begin the markers creation
+             displayMarkers();
+          }
+          google.maps.event.addDomListener(window, 'load', initialize);
+
+
+          // This function will iterate over markersData array
+          // creating markers with createMarker function
+          function displayMarkers(){
+
+             // this variable sets the map bounds according to markers position
+             var bounds = new google.maps.LatLngBounds();
+
+             // for loop traverses markersData array calling createMarker function for each marker
+             for (var i = 0; i < markersData.length; i++){
+
+                var latlng = new google.maps.LatLng(markersData[i].lat, markersData[i].lng);
+                var name = markersData[i].name;
+                var address1 = markersData[i].address1;
+                var address2 = markersData[i].address2;
+                var postalCode = markersData[i].postalCode;
+
+                createMarker(latlng, name, address1, address2, postalCode);
+
+                // marker position is added to bounds variable
+                bounds.extend(latlng);
+             }
+
+             // Finally the bounds variable is used to set the map bounds
+             // with fitBounds() function
+             map.fitBounds(bounds);
+          }
+
+          // This function creates each marker and it sets their Info Window content
+          function createMarker(latlng, name, address1, address2, postalCode){
+             var marker = new google.maps.Marker({
+                map: map,
+                position: latlng,
+                title: name
+             });
+
+             // This event expects a click on a marker
+             // When this event is fired the Info Window content is created
+             // and the Info Window is opened.
+             google.maps.event.addListener(marker, 'click', function() {
+
+                // Creating the content to be inserted in the infowindow
+                var iwContent = '<div id="iw_container">' +
+                      '<div class="iw_title">' + name + '</div>' +
+                   '<div class="iw_content">' + address1 + '<br />' +
+                   address2 + '<br />' +
+                   postalCode + '</div></div>';
+
+                // including content to the Info Window.
+                infoWindow.setContent(iwContent);
+
+                // opening the Info Window in the current map and at the current marker location.
+                infoWindow.open(map, marker);
+             });
+          }
+       }
+
+      $(document).ready(ready);
+      $(document).on('page:load', ready);
+
+
+      </script>
   </body>
 </html>
