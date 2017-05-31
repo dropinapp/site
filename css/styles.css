@@ -12,7 +12,7 @@ body {
   position: relative; }
 
 .videowrap {
-  position: fixed;
+  position: static;
   top: 0;
   left: 0;
   z-index: -100;
