@@ -3,6 +3,10 @@ body {
   padding: 0;
   font-family: 'Lato', sans-serif; }
 
+* {
+  overflow-y: visible;
+}
+
 /*--------------------------------------LANDING PAGE CSS---------------------------------*/
 .top {
   height: 100%;
