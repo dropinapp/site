@@ -190,6 +190,10 @@ body {
   .spacerBottomDisplay {
     display: none; }
 
+   .middle2Content {
+     background-color: #151F29;
+  }
+  
   .middle2Content > .middle2Tag {
     font-size: 30px; }
 
