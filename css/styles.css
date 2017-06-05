@@ -9,7 +9,7 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   position: auto; 
   z-index: -999;
-  width: 100%;
+/*   width: 100%; */
 }
 
 .videowrap {
