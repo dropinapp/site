@@ -11,19 +11,20 @@
   </head>
 
   <body>
-    <div class="main-panel">
       <div class="content" align="center">
         <div class="container-fluid">
-          <div class="videowrap">
+          <div class="row">
             <div class="videowrap">
-            <video id="video-bg-elem" preload="auto" autoplay="true" loop="loop" muted="muted">
-              <source src="video/landing.mp4" type="video/mp4">
-                video not supported
-            </video>
-          </div>
-          <div class="row top">
-            <div class="col-lg-2 col-lg-offset-9">
-              <img src="img/logo.png" class="logo" alt="">
+              <div class="videowrap">
+              <video id="video-bg-elem" preload="auto" autoplay="true" loop="loop" muted="muted">
+                <source src="video/landing.mp4" type="video/mp4">
+                  video not supported
+              </video>
+            </div>
+            <div class="top">
+              <div class="col-lg-2 col-lg-offset-9">
+                <img src="img/logo.png" class="logo" alt="">
+              </div>
             </div>
           </div>
           <div class="row top">
@@ -266,11 +267,8 @@
              });
           }
        }
-
       $(document).ready(ready);
       $(document).on('page:load', ready);
-
-
       </script>
   </body>
 </html>
