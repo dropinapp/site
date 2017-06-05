@@ -13,18 +13,18 @@
   <body>
       <div class="content" align="center">
         <div class="container-fluid">
+          <div class="videowrap">
             <div class="videowrap">
-              <div class="videowrap">
-              <video id="video-bg-elem" preload="auto" autoplay="true" loop="loop" muted="muted">
-                <source src="video/landing.mp4" type="video/mp4">
-                  video not supported
-              </video>
+            <video id="video-bg-elem" preload="auto" autoplay="true" loop="loop" muted="muted">
+              <source src="video/landing.mp4" type="video/mp4">
+                video not supported
+            </video>
+          </div>
+          <div class="top">
+            <div class="col-lg-2 col-lg-offset-9">
+              <img src="img/logo.png" class="logo" alt="">
             </div>
-            <div class="row top">
-              <div class="col-lg-2 col-lg-offset-9">
-                <img src="img/logo.png" class="logo" alt="">
-              </div>
-            </div>
+          </div>
           <div class="row top">
             <h1 class="tag col-lg-12">GYM WHEN &#38; WHERE YOU WANT IT.</h1>
           </div>
@@ -265,8 +265,11 @@
              });
           }
        }
+
       $(document).ready(ready);
       $(document).on('page:load', ready);
+
+
       </script>
   </body>
 </html>
