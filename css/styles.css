@@ -6,8 +6,9 @@ body {
 
 /*--------------------------------------LANDING PAGE CSS---------------------------------*/
 .top {
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  position: auto; 
+  position: relative; 
   z-index: -999;
 
 }
