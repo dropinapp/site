@@ -92,7 +92,7 @@
       </div>
       <div class="row learn-more">
         <div class="col-lg-12">
-          <button type="button" name="button" class="learn-more-button btn btn-default"><a class="learn-more-button btn btn-default" href="#popup2" styles="text-decoration:none; color:white;">Send Me Up!</a></button>
+          <a class="learn-more-button btn btn-default" href="#popup2" styles="text-decoration:none; color:white;">Send Me Up!</a>
         </div>
       </div>
       <div id="popup2" class="overlay light">
@@ -101,7 +101,8 @@
           <h2>What the what?</h2>
           <div class="content">
             <form action="https://formspree.io/collin.ehret@gmail.com" method="POST">
-              <input type="text" name="name" class="input-box">
+	      <textarea type="text" name="name" class="input-box"rows="4" columns="40" name="_replyto">
+	      </textarea>
               <br><br>
               <input type="email" name="_replyto" class="input-box">
               <br><br>
