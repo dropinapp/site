@@ -7,7 +7,7 @@ body {
 /*--------------------------------------LANDING PAGE CSS---------------------------------*/
 .top {
   background-color: rgba(0, 0, 0, 0.5);
-  position: relative; 
+  position: auto; 
 }
 
 .videowrap {
