@@ -237,7 +237,7 @@ body {
   height: 40%; }
 
 .g-section1 {
-  background-image: url("gym.jpeg);
+  background-image: url(gym.jpeg);
   color: #fff;
   text-align: center;
   height: 80vh;
