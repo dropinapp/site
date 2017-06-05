@@ -5,10 +5,6 @@ body {
 }
 
 /*--------------------------------------LANDING PAGE CSS---------------------------------*/
-.container-fluid {
-  overflow: scroll;
-}
-
 .top {
   background-color: rgba(0, 0, 0, 0.5);
   position: auto; 
