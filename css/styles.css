@@ -237,7 +237,7 @@ body {
   height: 40%; }
 
 .g-section1 {
-  background-image: url("gym.jpeg");
+  background-image: url("img/gym.jpeg");
   color: #fff;
   text-align: center;
   height: 80vh;
@@ -281,7 +281,7 @@ body {
   z-index: 100;
   position: relative;
   height: auto;
-  background-image: url("map.png"); }
+  background-image: url("img/map.png"); }
 
 .map-text {
   color: #fff;
