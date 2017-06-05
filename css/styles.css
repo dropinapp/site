@@ -6,7 +6,7 @@ body {
 
 /*--------------------------------------LANDING PAGE CSS---------------------------------*/
 .container-fluid {
-  overflow-y: scroll;
+  overflow: scroll;
 }
 
 .top {
