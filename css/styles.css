@@ -223,65 +223,77 @@ body {
 
 /*--------------------------------------GYM LANDING PAGE----------------------------------------------------------------------------------*/
 .top-nav {
-  background-color: #252A3F; }
+  background-color: #252A3F;
+}
 
 .btn {
   background-color: #00D851;
   border: 1px solid #00D851;
-  color: #fff; }
+  color: #fff;
+}
 
 #gym-logo {
   padding-top: 5px;
   padding-left: 20px;
   width: 40%;
-  height: 40%; }
+  height: 40%
+}
 
 .g-section1 {
   background-image: url(gym.jpeg);
   color: #fff;
   text-align: center;
   height: 80vh;
-  width: 100%; }
+  width: 100%;
+}
 
 #no-gym {
   height: 80vh;
-  width: 100%; }
+  width: 100%;
+}
 
 .gym-landing-tag {
   font-weight: 300;
-  padding-top: 10%; }
+  padding-top: 10%;
+}
 
 .gym-landing-subtag {
   font-weight: lighter;
   margin-top: 5%;
-  margin-bottom: 5%; }
+  margin-bottom: 5%;
+}
 
 .gym-join-button, .learn-more-button {
   background-color: #c46931;
   border: solid 1px #c46931;
   width: auto;
-  border-radius: 5px; }
+  border-radius: 5px;
+}
 
 .benefits-tag {
   margin-top: 5%;
   text-align: center;
-  font-weight: 400; }
+  font-weight: 400;
+}
 
 .benefit-imgs {
   padding-left: 37%;
   margin-top: 20%;
-  margin-bottom: 20%; }
+  margin-bottom: 20%;
+}
 
 .benefits-description {
   text-align: center;
   margin-top: 10%;
-  margin-bottom: 20%; }
+  margin-bottom: 20%;
+}
 
 .map-div {
   z-index: 100;
   position: relative;
   height: auto;
-  background-image: url(map.png); }
+  background-image: url(map.png);
+}
 
 .map-text {
   color: #fff;
@@ -289,42 +301,46 @@ body {
   z-index: 100;
   position: absolute;
   margin-bottom: 5%;
-  margin-top: 5%; }
+  margin-top: 5%;
+}
 
 .map-text1 {
-  font-weight: 100; }
+  font-weight: 100;
+}
 
 #pin {
   z-index: 100;
   margin: 0 auto;
   height: 10%;
-  width: 10%; }
+  width: 10%;
+}
 
 .map-text2 {
-  font-weight: 100; }
+  font-weight: 100;
+}
 
 .partner-tag {
   text-align: center;
-  font-weight: lighter; }
+  font-weight: lighter;
+}
 
 .learn-more {
-  background-color: #252A3F; }
+  background-color: #252A3F;
+}
 
 .learn-more-tag {
   color: #fff;
   font-weight: lighter;
   text-align: center;
   margin-top: 10%;
-  margin-bottom: 10%; }
+  margin-bottom: 10%;
+}
 
 .learn-more-button {
   margin-bottom: 10%;
   width: auto;
-  margin-left: 45%; }
-
-.input-box {
-  border-radius: 5px;
-  text-align: center; }
+  margin-left: 45%;
+}
 
  * {
    padding:0;
