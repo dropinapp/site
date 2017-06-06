@@ -65,7 +65,9 @@ body {
   width: 100%; }
 
 .middle1 {
-  background-color: #fff; }
+  background-color: #fff; 
+  padding: 10px;
+}
 
 .middle1Content1 {
   height: 85%;
@@ -411,7 +413,6 @@ h4 {
 /*--------------------------------------GYM LANDING PAGE----------------------------------------------------------------------------------*/
 .top-nav {
   background-color: #252A3F;
-  padding: 10px;
 }
 
 .btn {
